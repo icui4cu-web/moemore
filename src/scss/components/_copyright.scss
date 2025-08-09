@@ -1,0 +1,13 @@
+.copyright {
+	color: #77868B;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.28;
+}
+
+@media (max-width: 767px) {
+	.copyright {
+		font-size: 12px;
+		font-weight: 300;
+	}
+}

@@ -1,0 +1,151 @@
+.gallery-list__back {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(60, 60, 60, 0.7);
+	backdrop-filter: blur(4px);
+}
+
+.gallery-list {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	transition: 0.3s all;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.gallery-list.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.gallery-list-box {
+	width: 90%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	max-width: 1600px;
+	max-height: 1150px;
+	border-radius: 10px;
+	background: #fff;
+	padding: 60px 60px;
+}
+
+.gallery-list-content {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	flex-direction: column;
+	padding: 0 20px;
+	gap: 30px;
+	display: flex;
+}
+
+.gallery-list-images {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-list-images__item {
+	cursor: pointer;
+}
+
+.gallery-list-images__item picture:nth-child(2) {
+	display: none;
+}
+
+.gallery-list-images img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.gallery-list__close {
+	position: absolute;
+	cursor: pointer;
+	right: 20px;
+	z-index: 3;
+	top: 20px;
+}
+
+.gallery-list-item__title {
+	font-size: 24px;
+	color: #131E2A;
+	line-height: 1.16666;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+
+@media (max-width: 1600px) {
+	.gallery-list-box {
+		padding: 50px 40px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.gallery-list-box {
+		padding: 40px 35px;
+	}
+
+	.gallery-list-images {
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.gallery-list-content {
+		gap: 25px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.gallery-list-box {
+		padding: 30px 25px;
+	}
+
+	.gallery-list-images {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.gallery-list-content {
+		gap: 25px;
+	}
+
+	.gallery-list-item__title {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.gallery-list-box {
+		padding: 30px 15px;
+	}
+
+	.gallery-list-images {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.gallery-list-content {
+		gap: 35px;
+	}
+
+	.gallery-list-item__title {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+}

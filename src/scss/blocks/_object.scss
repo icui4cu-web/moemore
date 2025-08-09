@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+	.object .row {
+		margin-bottom: -40px;
+	}
+	
+	.object-home .object-item {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		max-width: 310px;
+	}
+
+	.object-home .row {
+		flex-wrap: nowrap;
+		margin-bottom: 0;
+		justify-content: stretch !important;
+		margin: 0 -6px !important;
+		overflow-x: auto;
+		overflow-y: hidden;
+		padding-bottom: 15px;
+	}
+
+	.object-home .row>div {
+		padding: 0 6px;
+		width: fit-content;
+		flex: 0 0 auto;
+	}
+}

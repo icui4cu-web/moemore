@@ -1,0 +1,123 @@
+.c-object-contacts {
+	border-radius: 10px;
+	padding: 30px 20px;
+	padding-right: 10px;
+	position: relative;
+	z-index: 1;
+	background: url("/img/object-contacts.png") no-repeat center center;
+	background-size: cover;
+}
+
+.c-object-contacts__head {
+	font-size: 20px;
+	line-height: 1.25;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 48px;
+}
+
+.c-object-contacts__phones {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 2px;
+}
+
+.c-object-contacts__phones a {
+	color: #fff;
+	font-size: 24px;
+	line-height: 1.25;
+	font-weight: 500;
+	margin-bottom: 10px;
+	border-bottom: 1px solid transparent;
+}
+
+.c-object-contacts__phones a:hover {
+	border-bottom-color: #fff;
+}
+
+.c-object-contacts__nav-link {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.c-object-contacts__nav-link:last-child {
+	margin-bottom: 0;
+}
+
+.c-object-contacts__nav-link:hover .c-object-contacts__nav-num {
+	border-bottom-color: #fff;
+}
+
+.c-object-contacts__nav-img {
+	flex-shrink: 0;
+	margin-right: 16px;
+}
+
+.c-object-contacts__nav-img img {
+	display: block;
+}
+
+.c-object-contacts__nav-head {
+	color: #42CAFF;
+	font-size: 14px;
+	line-height: 1.42;
+	display: block;
+}
+
+.c-object-contacts__nav-num {
+	font-weight: 500;
+	line-height: 1.25;
+	color: #fff;
+	transition: all 0.35s ease;
+	border-bottom: 1px solid transparent;
+}
+
+@media (max-width: 1200px) {
+	.c-object-contacts {
+		padding: 20px 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.c-object-contacts {
+		background: none;
+		padding: 0;
+	}
+
+	.c-object-contacts__head {
+		color: #131E2A;
+		font-size: 32px;
+	}
+
+	.c-object-contacts__phones a {
+		color: #131E2A;
+		font-size: 24px;
+	}
+
+	.c-object-contacts__nav-num {
+		color: #131E2A;
+	}
+
+	.c-object-contacts__nav-img svg {
+		width: 36px;
+		height: 36px;
+	}
+
+	.c-object-contacts__nav-img circle:first-child {
+		stroke: #0180B2;
+	}
+}
+
+@media (max-width: 767px) {
+	.c-object-contacts__phones a {
+		font-size: 16px;
+		margin-bottom: 16px;
+	}
+
+	.c-object-contacts__head {
+		font-size: 24px;
+		margin-bottom: 16px;
+	}
+}

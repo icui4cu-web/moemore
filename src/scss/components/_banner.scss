@@ -1,0 +1,39 @@
+.banner {
+	padding: 30px;
+	height: 320px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.banner--sea {
+	background: url("/img/banner-1.png") no-repeat center center;
+}
+
+.banner--sale {
+	background: url("/img/banner-2.svg") no-repeat center center;
+}
+
+.banner-head {
+	color: #1C6678;
+	font-weight: 500;
+	line-height: 1.2;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.banner-date {
+	color: #D8503E;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.11;
+	margin-bottom: 16px;
+}
+
+.banner-text {
+	color: #216B7D;
+	line-height: 1.25;
+}

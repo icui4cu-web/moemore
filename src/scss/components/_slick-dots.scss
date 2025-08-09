@@ -1,0 +1,35 @@
+.slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 10;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.slick-dots li {
+	background: #D5CDCD;
+	width: 6px;
+	height: 6px;
+	transition: all 0.35s ease;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.slick-dots li:hover {
+	background-color: #fff;
+}
+
+.slick-dots li.slick-active {
+	background-color: #fff;
+}
+
+.slick-dots li+li {
+	margin-left: 10px;
+}
+
+.slick-dots li button {
+	color: transparent;
+}

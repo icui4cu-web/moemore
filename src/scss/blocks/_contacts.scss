@@ -1,0 +1,118 @@
+.contacts-project {
+	position: relative;
+	z-index: 2;
+}
+
+.contacts-project .contacts-info {
+	margin-bottom: 0;
+}
+
+.contacts-form {
+	position: relative;
+}
+
+.contacts-form__img {
+	position: absolute;
+	right: 0;
+	top: 66px;
+	max-width: 53vw;
+	transition: all 0.3s ease 0s;
+}
+
+.contacts-form__img.hidden {
+	opacity: 0;
+}
+
+.contacts-form .container {
+	transition: all 0.3s ease 0s;
+}
+
+.contacts-form .container.hidden {
+	opacity: 0;
+}
+
+.contacts-info {
+	margin-bottom: 60px;
+}
+
+.contacts-info p {
+	margin-bottom: 30px;
+}
+
+.contacts-info p:last-child {
+	margin-bottom: 0;
+}
+
+.contacts-info p a {
+	color: #0180B2;
+	border-bottom: 1px solid transparent;
+}
+
+.contacts-info p a:hover {
+	border-bottom-color: #0180B2;
+}
+
+.contacts-message {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	transition: all 0.3s ease 0s;
+	opacity: 0;
+	z-index: -10;
+}
+
+.contacts-message.visible {
+	z-index: 10;
+	opacity: 100;
+}
+
+.contacts-message img {
+	width: 100%;
+	max-width: 40px;
+}
+
+.contacts-message h2 {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.contacts-message button {
+	background-color: #FFDC3D;
+	font-size: 25px;
+	padding: 14px 30px;
+	font-weight: 500;
+	border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+	.contacts-info {
+		margin-bottom: 50px;
+	}
+
+	.contacts-info p {
+		margin-bottom: 22px;
+	}
+
+	.contacts-info .row>div {
+		margin-bottom: 20px;
+	}
+
+	.contacts-info .row>div:last-child {
+		margin-bottom: 0;
+	}
+
+	.contacts-form__img {
+		display: none;
+	}
+
+	.contacts-form .btn {
+		max-width: 100%;
+		width: 100%;
+	}
+}

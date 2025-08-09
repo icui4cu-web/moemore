@@ -1,0 +1,14 @@
+.centered {
+	display: flex;
+	align-items: center;
+}
+
+.centered-img {
+	flex-shrink: 0;
+	margin-right: 6px;
+}
+
+.centered-img svg,
+.centered-img img {
+	display: block;
+}

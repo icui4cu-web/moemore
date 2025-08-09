@@ -1,0 +1,117 @@
+.hide-desktop {
+	display: none;
+}
+
+.tl-center {
+	text-align: center;
+}
+
+.font-14 {
+	line-height: 1.42;
+	font-size: 14px;
+}
+
+.gray {
+	color: #77868B;
+}
+
+.green {
+	color: #23C363;
+}
+
+.red {
+	color: #FA5636;
+}
+
+.blue {
+	color: #0180B2;
+}
+
+.medium {
+	font-weight: 500;
+}
+
+.sticky {
+	position: sticky;
+	top: 30px;
+}
+
+.mb-6 {
+	margin-bottom: 6px !important;
+}
+
+.mb-10 {
+	margin-bottom: 10px !important;
+}
+
+.mb-20 {
+	margin-bottom: 20px !important;
+}
+
+.mb-30 {
+	margin-bottom: 30px !important;
+}
+
+.mb-40 {
+	margin-bottom: 40px !important;
+}
+
+.mb-50 {
+	margin-bottom: 50px !important;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.mb-130 {
+	margin-bottom: 130px;
+}
+
+.mb-150 {
+	margin-bottom: 150px;
+}
+
+.mb-170 {
+	margin-bottom: 170px;
+}
+
+@media (max-width: 768px) {
+	.hide-desktop {
+		display: block;
+	}
+
+	.font-14 {
+		font-size: 14px;
+		line-height: 1.42;
+	}
+
+	.mb-50 {
+		margin-bottom: 30px !important;
+	}
+
+	.mb-100,
+	.mb-130,
+	.mb-170,
+	.mb-150 {
+		margin-bottom: 75px;
+	}
+}
+
+@media (max-width: 767px) {
+	.mob-100 {
+		width: 100%;
+		max-width: 100%;
+	}
+	
+	.mb-50 {
+		margin-bottom: 30px !important;
+	}
+
+	.mb-100,
+	.mb-130,
+	.mb-170,
+	.mb-150 {
+		margin-bottom: 50px;
+	}
+}

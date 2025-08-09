@@ -1,0 +1,84 @@
+.c-object-mobile {
+	display: none;
+	margin-bottom: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+.c-object-mobile-slider {
+	width: 100%;
+	margin: 0 -15px;
+	padding: 0 15px;
+}
+
+.c-object-mobile-slide {
+	position: relative;
+	padding: 0 8px;
+}
+
+.c-object-mobile-slide .gallery-modal__slide-title {
+	padding: 12px 5px;
+	text-align: center;
+	font-weight: 500;
+	color: #131E2A;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.c-object-mobile-image {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+.c-object-mobile-image img {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	display: block;
+	border-radius: 12px;
+	transition: transform 0.5s ease;
+}
+
+.c-object-mobile-counter {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	background: rgba(1, 128, 178, 0.8);
+	color: white;
+	padding: 8px 14px;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: 500;
+	backdrop-filter: blur(3px);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+	z-index: 10;
+	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+}
+
+.c-object-mobile-counter:before {
+	display: none;
+}
+
+.c-object-mobile .slick-dots {
+	bottom: -28px;
+}
+
+.c-object-mobile-slider {
+	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	.c-object-mobile {
+		display: block;
+	}
+
+	.c-object-mobile .btn {
+		margin-bottom: 30px;
+	}
+}

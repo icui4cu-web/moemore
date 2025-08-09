@@ -1,0 +1,13 @@
+.way-slider-mob {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.way-slider {
+		display: none;
+	}
+
+	.way-slider-mob {
+		display: block;
+	}
+}

@@ -1,0 +1,111 @@
+.pos {
+	position: relative;
+	z-index: 1;
+}
+
+.pos::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 918px;
+	background: url("/img/project-bg.png") no-repeat center center;
+	top: -243px;
+	z-index: -5;
+}
+
+.pos .h2 {
+	margin-bottom: 93px;
+}
+
+.pos-img {
+	position: absolute;
+	left: 3%;
+	top: 110px;
+	max-width: 41vw;
+}
+
+.pos-content .row {
+	margin-bottom: -93px;
+}
+
+.pos-item {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 93px;
+}
+
+.pos-item__num {
+	color: rgba(19, 30, 42, 0.05);
+	top: -63px;
+	line-height: 1;
+	position: absolute;
+	z-index: -1;
+	font-size: 166px;
+	font-weight: 600;
+}
+
+.pos-item__head {
+	font-size: 17px;
+	line-height: 1.333;
+	margin-bottom: 20px;
+	font-weight: 500;
+	color: #131E2A;
+}
+
+@media (max-width: 768px) {
+.pos-img {
+		position: static;
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+.pos {
+		margin-bottom: 70px !important;
+	}
+	
+	.pos-img {
+		padding: 0 15px;
+	}
+	
+	.pos::before {
+		display: none;
+	}
+	
+	.pos-content .row {
+		margin-bottom: 0;
+	}
+	
+	.pos-content .slick-dots {
+		bottom: -20px;
+	}
+	
+	.pos-content .slick-dots li.slick-active {
+		background: #FFDC3D;
+	}
+	
+	.pos .h2 {
+		margin-bottom: 16px;
+	}
+	
+	.pos-item {
+		margin: 0;
+		padding-top: 40px;
+	}
+	
+	.pos-item__num {
+		font-size: 100px;
+		top: -40px;
+		top: 0;
+	}
+	
+	.pos-item__head {
+		font-size: 18px;
+		margin-bottom: 6px;
+	}
+}

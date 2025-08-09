@@ -1,0 +1,34 @@
+.lang {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.lang a {
+	text-transform: uppercase;
+}
+
+.lang a.active {
+	color: #0180b2;
+}
+
+.lang a:hover {
+	color: #0180b2;
+}
+
+.lang a+a {
+	position: relative;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+.lang a+a::before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	left: 0;
+	height: 26px;
+	background: #909090;
+	top: 50%;
+	transform: translateY(-50%);
+}

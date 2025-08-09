@@ -1,0 +1,33 @@
+.gallery-preview {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	margin-bottom: 40px;
+}
+
+.gallery-preview-other {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	row-gap: 10px;
+}
+
+.gallery-preview-item {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.gallery-preview-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.gallery-preview {
+		display: none;
+		margin-bottom: 20px;
+	}
+}

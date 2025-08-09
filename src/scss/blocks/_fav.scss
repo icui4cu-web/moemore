@@ -1,0 +1,29 @@
+.fav img {
+	display: block;
+}
+
+.fav-text {
+	margin-bottom: 45px;
+}
+
+.fav-text p {
+	vertical-align: baseline;
+	margin-bottom: 0;
+}
+
+.fav-text p svg {
+	margin-left: 7px;
+	display: inline-block;
+	position: relative;
+	bottom: -2px;
+}
+
+@media (max-width: 767px) {
+	.fav {
+		display: none;
+	}
+
+	.fav-text {
+		margin-bottom: 30px;
+	}
+}

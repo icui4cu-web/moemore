@@ -1,0 +1,25 @@
+.blog-content .h2 {
+	margin-bottom: 50px;
+}
+
+.blog--popular .row {
+	margin-bottom: -24px;
+}
+
+.blog--popular .blog-item {
+	margin-bottom: 24px;
+}
+
+.blog--popular .blog-item__img {
+	padding-top: 62.5%;
+}
+
+@media (max-width: 767px) {
+	.blog-content .h2 {
+		margin-bottom: 30px;
+	}
+
+	.blog .mb-40 {
+		margin-bottom: 30px !important;
+	}
+}

@@ -1,0 +1,141 @@
+.gal-content {
+	text-align: center;
+	padding: 10px 0 20px;
+}
+
+.gal-content__head {
+	font-size: 18px;
+	color: #131E2A;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+.gal-content__counter {
+	color: #77868B;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+.gal-for__slide img {
+	display: block;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.gal-for .slick-arrow {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #0180B2;
+	background: url("/img/slick-arrow.svg") no-repeat center center;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 20;
+	color: transparent;
+	transition: all 0.35s ease;
+}
+
+.gal-for .slick-arrow:hover {
+	background: #0180B2 url("/img/slick-arrow-hover.svg") no-repeat center center;
+}
+
+.gal-for .slick-prev {
+	left: 0;
+}
+
+.gal-for .slick-next {
+	right: 0;
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.gal-nav .slick-track {
+	margin: 0 auto;
+}
+
+.gal-nav__slide {
+	margin: 0 5px;
+	cursor: pointer;
+	position: relative;
+}
+
+.gal-nav__slide.slick-current::before {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.gal-nav__slide::before {
+	content: "";
+	position: absolute;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all 0.35s ease;
+}
+
+.gal-nav__slide img {
+	display: block;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.gal-for__slide--title {
+	text-align: center;
+	padding-top: 20px;
+	font-weight: 700;
+}
+
+@media (max-width: 1367px) {
+	.gal-for .slick-prev {
+		left: 25px;
+	}
+
+	.gal-for .slick-next {
+		right: 25px;
+	}
+}
+
+@media (max-width: 767px) {
+	.gal-for .slick-arrow {
+		width: 36px;
+		height: 36px;
+		background-size: 12px 12px !important;
+	}
+
+	.gal-for .slick-prev {
+		left: 10px;
+	}
+
+	.gal-for .slick-next {
+		right: 10px;
+	}
+
+	.gal-nav {
+		display: none;
+	}
+
+	.gal-content {
+		padding-bottom: 0;
+	}
+
+	.gal-content__counter {
+		margin: 0;
+		position: absolute;
+		top: 23px;
+		left: 50%;
+		transform: tanslateX(-50%);
+		font-size: 14px;
+		color: #535353;
+	}
+
+	.gal-content__head {
+		text-align: left;
+		font-size: 14px;
+		color: #131E2A;
+		margin-bottom: 0;
+	}
+}

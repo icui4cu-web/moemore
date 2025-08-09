@@ -1,0 +1,99 @@
+.btn {
+	display: inline-block;
+	transition: all 0.35s ease;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	border-radius: 100px;
+	font-weight: 500;
+	line-height: 1.25;
+	padding: 20px 60px;
+	position: relative;
+	z-index: 1;
+}
+
+.btn--flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn--flex span {
+	margin-right: 10px;
+}
+
+.btn--yellow {
+	background-color: #FFDC3D;
+	font-size: 14px;
+	padding: 8px 30px;
+	font-weight: 400;
+}
+
+.btn--yellow.btn--large {
+	font-size: 16px;
+	padding: 20px 15px;
+}
+
+.btn--yellow:hover {
+	background: #ffd40f;
+}
+
+.btn--yellow:active {
+	background: #FACD00;
+}
+
+.btn--blue {
+	background: linear-gradient(0deg, #0180B2, #0180B2);
+	color: #fff;
+}
+
+.btn--blue::before {
+	content: "";
+	position: absolute;
+	border-radius: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, #0195CF, #0195CF);
+	transition: all 0.35s ease;
+	opacity: 0;
+	z-index: -1;
+}
+
+.btn--blue::after {
+	content: "";
+	position: absolute;
+	border-radius: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, #03739F, #03739F);
+	transition: all 0.35s ease;
+	opacity: 0;
+	z-index: -1;
+}
+
+.btn--blue:hover::before {
+	opacity: 1;
+}
+
+.btn--blue:active::after {
+	opacity: 1;
+}
+
+.btn.disabled {
+	background: #E0E0E0;
+	pointer-events: none;
+}
+
+.btn--like.active path {
+	fill: #FA5636;
+}
+
+@media (max-width: 767px) {
+	.btn {
+		padding: 17px 60px;
+	}
+}

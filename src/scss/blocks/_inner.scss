@@ -1,0 +1,15 @@
+.inner {
+	padding: 60px 0 120px;
+}
+
+@media (max-width: 767px) {
+	.inner {
+		padding: 20px 0 30px;
+	}
+
+	.inner .row>div:last-child .object-item--indent {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		border-bottom: none;
+	}
+}

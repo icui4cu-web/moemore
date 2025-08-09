@@ -1,0 +1,16 @@
+.c-object-sidebar {
+	height: 100%;
+	position: relative;
+}
+
+.c-object-sidebar .sticky {
+	top: 90px;
+}
+
+.c-object-sidebar__box {
+	margin-bottom: 50px;
+}
+
+.c-object-sidebar__box:last-child {
+	margin-bottom: 0;
+}

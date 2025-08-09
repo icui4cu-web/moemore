@@ -1,0 +1,58 @@
+.breadcrumb {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 55px;
+	display: flex;
+	align-items: center;
+}
+
+.breadcrumb li {
+	display: inline-block;
+	line-height: 1.25;
+	position: relative;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+.breadcrumb li::before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	left: -4px;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 10px;
+	background: url("/img/bread-arrow.svg") no-repeat center center;
+}
+
+.breadcrumb li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.breadcrumb li:first-child::before {
+	display: none;
+}
+
+.breadcrumb li:last-child a {
+	cursor: auto;
+	color: #77868B;
+}
+
+.breadcrumb li:last-child a:hover {
+	text-decoration: none;
+}
+
+.breadcrumb a {
+	color: #0180B2;
+}
+
+.breadcrumb a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+	.breadcrumb {
+		margin-bottom: 30px;
+	}
+}

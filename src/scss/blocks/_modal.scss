@@ -1,0 +1,149 @@
+.modal {
+	position: relative;
+	background-color: #fff;
+	border-radius: 4px;
+	margin: 0 auto;
+	max-width: 550px;
+	padding: 30px 30px;
+}
+
+.modal-call {
+	max-width: 330px;
+	margin: 30px auto;
+	background: #fff url("/img/call-bg.png") no-repeat left top;
+}
+
+.modal-call .c-object-contacts__head {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.modal-link {
+	display: flex;
+	align-items: center;
+	margin-bottom: 35px;
+}
+
+.modal-link span {
+	transition: all 0.35s ease;
+	font-size: 18px;
+	font-weight: 500;
+	color: #131E2A;
+	border-bottom: 1px solid transparent;
+}
+
+.modal-link:hover span {
+	border-bottom-color: #131E2A;
+}
+
+.modal-link svg {
+	flex-shrink: 0;
+	margin-right: 14px;
+}
+
+.modal-like {
+	display: none;
+}
+
+.modal-box {
+	margin-bottom: 40px;
+}
+
+.modal-box:last-child {
+	margin-bottom: 0;
+}
+
+.modal-close {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.modal-close:hover circle {
+	fill: #fff;
+}
+
+.modal-close:hover path {
+	fill: #0180B2;
+}
+
+.modal-close svg {
+	display: block;
+}
+
+.modal-gallery {
+	max-width: 1590px;
+	padding: 80px;
+	margin: 30px auto;
+}
+
+.modal-gallery--small {
+	padding: 35px;
+}
+
+.modal-gallery .modal-close img {
+	display: none;
+}
+
+.modal-gallery__item {
+	padding: 0 5px;
+	margin-bottom: 10px;
+	max-width: 230px;
+}
+
+.modal-gallery__item img {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.modal-gallery__box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+	.modal-close {
+		right: 15px;
+		top: 15px;
+	}
+
+	.modal-gallery {
+		padding: 35px 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.modal-link {
+		display: none;
+	}
+
+	.modal-like {
+		display: block;
+	}
+
+	.modal-like.active path:nth-child(1) {
+		fill: #fff;
+	}
+
+	.modal-like.active path:nth-child(2) {
+		fill: #FA5636;
+	}
+
+	.modal-gallery {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+	}
+
+	.modal-gallery .d-flex {
+		margin-bottom: 50px;
+	}
+
+	.modal-close svg {
+		width: 24px;
+		height: 24px;
+	}
+}
