@@ -14,6 +14,14 @@
 	padding-top: 62.5%;
 }
 
+@media (max-width: 768px) {
+	.blog-actions {
+		max-width: 310px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 @media (max-width: 767px) {
 	.blog-content .h2 {
 		margin-bottom: 30px;
