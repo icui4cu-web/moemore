@@ -1,0 +1,10 @@
+@use "sass:math";
+
+@function rs($from, $to, $media-from: 360px, $media-to: 1434px, $unit: vw) {
+	$a: math.div($to - $from, $media-to - $media-from);
+	$b: $from - $a * $media-from;
+
+	$sign: if($b < 0, '-', '+');
+
+	@return clamp(min($from, $to), #{$a * 100 + $unit} #{$sign} #{math.abs($b)}, max($from, $to));
+}

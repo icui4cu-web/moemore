@@ -19,20 +19,14 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	right: 194px;
+	right: calc(50% - 766px);
 	margin-top: -30px;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1550px) {
 	.home-seo__img {
 		right: 12px;
-		max-width: 55vw;
-	}
-}
-
-@media (max-width: 1367px) {
-	.home-seo__img {
-		max-width: 50vw;
+		max-width: min(55%, 100% - 526px - 48px);
 	}
 }
 
@@ -40,13 +34,9 @@
 	.home-seo__content {
 		padding: 0;
 	}
-
-	.home-seo__img {
-		max-width: 45vw;
-	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	.home-seo__img {
 		display: none;
 	}

@@ -1,3 +1,5 @@
+@use "@scss/fn";
+
 .pos {
 	position: relative;
 	z-index: 1;
@@ -21,9 +23,9 @@
 
 .pos-img {
 	position: absolute;
-	left: 3%;
+	right: calc(50% + fn.rs(24px, 100px, 1023px));
 	top: 110px;
-	max-width: 41vw;
+	max-width: calc(50% - fn.rs(24px, 100px, 1023px) - 12px);
 }
 
 .pos-content .row {
@@ -54,8 +56,9 @@
 	color: #131E2A;
 }
 
-@media (max-width: 768px) {
-.pos-img {
+@media (max-width: 1022.98px) {
+	.pos-img {
+		padding: 0 15px;
 		position: static;
 		display: block;
 		margin: 0 auto;
@@ -64,13 +67,9 @@
 	}
 }
 
-@media (max-width: 767px) {
-.pos {
+@media (max-width: 767.98px) {
+	.pos {
 		margin-bottom: 70px !important;
-	}
-	
-	.pos-img {
-		padding: 0 15px;
 	}
 	
 	.pos::before {

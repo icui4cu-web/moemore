@@ -184,7 +184,7 @@ export function initWaySliders() {
 				focusOnSelect: true,
 				mobileFirst: true,
 				responsive: [{
-					breakpoint: 1023,
+					breakpoint: 1022.98,
 					settings: 'unslick'
 				}]
 			});
@@ -192,7 +192,11 @@ export function initWaySliders() {
 			$(this).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 				$(".way-tabs__nav-item").removeClass("active").eq($(currentSlide).index()).addClass("active");
 				$(".way-tabs__content-item").hide().eq(nextSlide).fadeIn();
-				console.log(currentSlide);
+			});
+
+			$(this).on('destroy', function (event, slick, currentSlide) {
+				$(".way-tabs__nav-item", this).removeClass("active").eq(0).addClass("active");
+				$(".way-tabs__content-item").hide().eq(0).fadeIn();
 			});
 		});
 	}
@@ -212,7 +216,7 @@ export function initFeaturesSliders() {
 				adaptiveHeight: true,
 				mobileFirst: true,
 				responsive: [{
-					breakpoint: 1023,
+					breakpoint: 1022.98,
 					settings: 'unslick'
 				}, {
 					breakpoint: 600,

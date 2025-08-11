@@ -51,7 +51,7 @@
 	border-bottom-color: #535353;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1022.98px) {
 	.footer {
 		background-size: 1000px 100%;
 	}
@@ -99,9 +99,7 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-}
 
-@media (max-width: 767px) {
 	.footer {
 		background: url("/img/footer-bg-mob.png") no-repeat center center;
 		background-size: 100% 100%;
