@@ -1,5 +1,9 @@
-@media (max-width: 1022.98px) {
-	.sidebar {
+.sidebar {
+	@media (max-width: 1022.98px) {
 		margin-top: 48px;
+
+		&_desktop-only {
+			display: none;
+		}
 	}
 }
