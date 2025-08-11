@@ -160,16 +160,14 @@
 	margin-right: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1022.98px) {
 	.filter-body {
 		margin-bottom: 30px;
 		top: 5px;
 		position: sticky;
 		z-index: 100;
 	}
-}
 
-@media (max-width: 768px) {
 	.filter-close {
 		cursor: pointer;
 	}
@@ -264,9 +262,7 @@
 		flex-shrink: 0;
 		margin-right: 10px;
 	}
-}
-
-@media (max-width: 767px) {
+	
 	.filter-content .btn {
 		max-width: 100%;
 		width: 100%;

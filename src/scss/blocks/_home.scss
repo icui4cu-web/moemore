@@ -1,3 +1,5 @@
+@use "@scss/fn";
+
 .home {
 	background: url("/img/home-bg.png") no-repeat center center;
 	background-size: 100% 100%;
@@ -24,8 +26,9 @@
 
 .home-img {
 	position: absolute;
-	right: 95px;
-	bottom: 0;
+	top: calc(50% + fn.rs(50px, 86px, 992px, 1844px));
+	transform: translateY(-50%);
+	right: calc(50% - 910px);
 	pointer-events: none;
 }
 
@@ -36,35 +39,21 @@
 	min-height: 680px;
 }
 
-@media (max-width: 1800px) {
-	.home-img {
-		max-width: 50vw;
-		bottom: auto;
-		top: 50%;
-		transform: translateY(-50%);
-		margin-top: 60px;
-		right: 3vw;
-	}
-}
-
-@media (max-width: 1367px) {
+@media (max-width: 1844px) {
 	.home-img {
 		right: 12px;
-		margin-top: 40px;
+		max-width: min(50%, 100% - 531px - 24px);
+		
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
 	.home-img {
-		right: 12px;
-		margin-top: 40px;
-		max-width: 45vw;
+		display: none;
 	}
-}
 
-@media (max-width: 768px) {
-	.home {
-		padding: 160px 0 120px;
+	.home-content {
+		max-width: none;
 	}
 
 	.home-map {
@@ -73,10 +62,14 @@
 		max-width: 500px;
 		top: -60px;
 	}
+}
 
-	.home-img {
-		display: none;
+@media (max-width: 768px) {
+	.home {
+		padding: 160px 0 120px;
 	}
+
+	
 
 	.home--inner {
 		min-height: 500px;

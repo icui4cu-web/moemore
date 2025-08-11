@@ -14,7 +14,11 @@
 	padding-top: 62.5%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+	.blog-content .blog-item {
+		width: 310px;
+	}
+
 	.blog-content .h2 {
 		margin-bottom: 30px;
 	}
