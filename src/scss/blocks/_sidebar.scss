@@ -1,0 +1,7 @@
+.sidebar {
+	@media (max-width: 1022.98px) {
+		&_desktop-only {
+			display: none;
+		}
+	}
+}
