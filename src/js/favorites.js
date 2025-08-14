@@ -21,7 +21,7 @@ export function addToFavorites(id) {
 	if (!favorites.includes(id)) {
 		favorites.push(id);
 		setCookie(FAVORITES_COOKIE, favorites);
-		console.log(`Added to favorites: ${id}`);
+		updateFavoritesCounter();
 	}
 }
 
@@ -33,7 +33,7 @@ export function removeFromFavorites(id) {
 	let favorites = initFavorites();
 	favorites = favorites.filter(favId => favId !== id);
 	setCookie(FAVORITES_COOKIE, favorites);
-	console.log(`Removed from favorites: ${id}`);
+	updateFavoritesCounter();
 }
 
 /**
@@ -41,6 +41,7 @@ export function removeFromFavorites(id) {
  */
 export function updateFavoritesDisplay() {
 	const favorites = initFavorites();
+
 	$('.object-item__like, .btn--like').each(function () {
 		const id = $(this).data('id');
 		if (favorites.includes(id)) {
@@ -49,8 +50,16 @@ export function updateFavoritesDisplay() {
 			$(this).removeClass('active');
 		}
 	});
+	
+	updateFavoritesCounter();
+}
+
+/**
+ * Обновляет счетчик избранного
+ */
+export function updateFavoritesCounter() {
+	const favorites = initFavorites();
 	$('.favor span').text(favorites.length);
-	console.log(`Favorites count: ${favorites.length}`);
 }
 
 /**
@@ -59,28 +68,20 @@ export function updateFavoritesDisplay() {
 export function initFavoritesHandlers() {
 	updateFavoritesDisplay();
 
-	// Обработчик клика по кнопке избранного
-	$('.object-item__like, .btn--like').on('click', function () {
+	$(document).on('click', '.object-item__like, .btn--like', function () {
 		const id = $(this).data('id');
 		if (!id) {
 			console.error("Элемент не имеет атрибута data-id, избранное не обновлено");
 			return;
 		}
 
-		console.log(this);
-
 		// Проверяем текущее состояние элемента
 		if ($(this).hasClass('active')) {
 			removeFromFavorites(id);
 			$(this).removeClass('active').hide().show(0);
-			console.log(`removeClass: ${id}`);
 		} else {
 			addToFavorites(id);
 			$(this).addClass('active').hide().show(0);
-			console.log(`addClass: ${id}`);
 		}
-
-		console.log(this);
-		updateFavoritesDisplay();
 	});
 }

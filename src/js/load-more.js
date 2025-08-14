@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import { updateFavoritesDisplay } from './favorites.js';
 
 /**
  * Инициализирует функционал загрузки дополнительных объектов
@@ -47,6 +48,8 @@ function GetNextPageCallback(response) {
 
         // Реинициализация слайдеров после загрузки новых элементов
         reinitObjectItemSliders();
+
+		updateFavoritesDisplay();
         
         $('.filter-preloader').addClass('d-none');
     }
